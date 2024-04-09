@@ -53,7 +53,7 @@ public class DiscordPresence extends Module {
     private final Setting<List<String>> line1Strings = sgLine1.add(new StringListSetting.Builder()
         .name("line-1-messages")
         .description("Messages used for the first line.")
-        .defaultValue("{player}", "{server}")
+        .defaultValue("playing as {player}", "playing on {server}")
         .onChanged(strings -> recompileLine1())
         .renderer(StarscriptTextBoxRenderer.class)
         .build()
@@ -80,7 +80,7 @@ public class DiscordPresence extends Module {
     private final Setting<List<String>> line2Strings = sgLine2.add(new StringListSetting.Builder()
         .name("line-2-messages")
         .description("Messages used for the second line.")
-        .defaultValue("Meteor on Crack!", "{round(server.tps, 1)} TPS", "Playing on {server.difficulty} difficulty.", "{server.player_count} Players online")
+        .defaultValue("#1 mod for porn addicts", "having sex with {server.player_count} femboys")
         .onChanged(strings -> recompileLine2())
         .renderer(StarscriptTextBoxRenderer.class)
         .build()
@@ -145,7 +145,7 @@ public class DiscordPresence extends Module {
 
     @Override
     public void onActivate() {
-        DiscordIPC.start(835240968533049424L, null);
+        DiscordIPC.start(931612017641529444L, null);
 
         rpc.setStart(System.currentTimeMillis() / 1000L);
 
@@ -244,18 +244,18 @@ public class DiscordPresence extends Module {
             if (!lastWasInMainMenu) {
                 rpc.setDetails(MeteorClient.NAME + " " + (MeteorClient.DEV_BUILD.isEmpty() ? MeteorClient.VERSION : MeteorClient.VERSION + " " + MeteorClient.DEV_BUILD));
 
-                if (mc.currentScreen instanceof TitleScreen) rpc.setState("Looking at title screen");
-                else if (mc.currentScreen instanceof SelectWorldScreen) rpc.setState("Selecting world");
-                else if (mc.currentScreen instanceof CreateWorldScreen || mc.currentScreen instanceof EditGameRulesScreen) rpc.setState("Creating world");
-                else if (mc.currentScreen instanceof EditWorldScreen) rpc.setState("Editing world");
-                else if (mc.currentScreen instanceof LevelLoadingScreen) rpc.setState("Loading world");
-                else if (mc.currentScreen instanceof MultiplayerScreen) rpc.setState("Selecting server");
-                else if (mc.currentScreen instanceof AddServerScreen) rpc.setState("Adding server");
-                else if (mc.currentScreen instanceof ConnectScreen || mc.currentScreen instanceof DirectConnectScreen) rpc.setState("Connecting to server");
-                else if (mc.currentScreen instanceof WidgetScreen) rpc.setState("Browsing Meteor's GUI");
+                if (mc.currentScreen instanceof TitleScreen) rpc.setState("doing nothing");
+                else if (mc.currentScreen instanceof SelectWorldScreen) rpc.setState("selecting world");
+                else if (mc.currentScreen instanceof CreateWorldScreen || mc.currentScreen instanceof EditGameRulesScreen) rpc.setState("creating world (i do not play minecraft because only allah can generate a world)");
+                else if (mc.currentScreen instanceof EditWorldScreen) rpc.setState("editing world");
+                else if (mc.currentScreen instanceof LevelLoadingScreen) rpc.setState("loading world");
+                else if (mc.currentScreen instanceof MultiplayerScreen) rpc.setState("selecting server");
+                else if (mc.currentScreen instanceof AddServerScreen) rpc.setState("adding server");
+                else if (mc.currentScreen instanceof ConnectScreen || mc.currentScreen instanceof DirectConnectScreen) rpc.setState("connecting to server");
+                else if (mc.currentScreen instanceof WidgetScreen) rpc.setState("adoring this masterpiece");
                 else if (mc.currentScreen instanceof OptionsScreen || mc.currentScreen instanceof SkinOptionsScreen || mc.currentScreen instanceof SoundOptionsScreen || mc.currentScreen instanceof VideoOptionsScreen || mc.currentScreen instanceof ControlsOptionsScreen || mc.currentScreen instanceof LanguageOptionsScreen || mc.currentScreen instanceof ChatOptionsScreen || mc.currentScreen instanceof PackScreen || mc.currentScreen instanceof AccessibilityOptionsScreen) rpc.setState("Changing options");
-                else if (mc.currentScreen instanceof CreditsScreen) rpc.setState("Reading credits");
-                else if (mc.currentScreen instanceof RealmsScreen) rpc.setState("Browsing Realms");
+                else if (mc.currentScreen instanceof CreditsScreen) rpc.setState("reading credits (why???)");
+                else if (mc.currentScreen instanceof RealmsScreen) rpc.setState("browsing realms");
                 else {
                     boolean setState = false;
                     if (mc.currentScreen != null) {
@@ -268,7 +268,7 @@ public class DiscordPresence extends Module {
                             }
                         }
                     }
-                    if (!setState) rpc.setState("In main menu");
+                    if (!setState) rpc.setState("doing nothing");
                 }
 
                 update = true;

@@ -1,4 +1,40 @@
+# femboy sex client
+stupid fucking edit of Meteor Client. why did you download this?
+#1 minecraft ha-- ahem, utility client for porn addicts and high estrogen beings
 
+## Usage
+
+### Building
+- good luck
+- clone this repo first probably
+- actually just follow the intructions that are below in the original readme
+
+### Installation
+- smack this bitch right into your mods folder (or dont, seriously this edit is awful)
+- if you run into issues again check the original readme
+
+## Features Added
+- custom configs for *Many Popular Servers*!!! (straight up lie)
+- edited fabric.mod.json with stupid bullshit added
+- edited internal configs throughout meteor
+- edited default config
+- default hud is pretty neat i think
+- more stupid fucking features like:
+  - custom resources
+  - thats literally it
+- changed branding in discord rpc (actually thats coming soon bc i literally dont know how the addons system work :3)
+
+just read the readme below its way better lmfaoooo
+
+actually before i do that here is the legal disclaimer that i was forced to add (i would have added this anyway):
+
+**femboy sex client** is a derivative work of **Meteor Client** by Meteor Developments.
+All available source code from Meteor Client is used in this fork, with edits made to the original source to suit it to the needs of this project.
+No harm is intended towards Meteor Development.
+
+thank you kind reader for taking the time to read this anyway go and like idk download the client (dont actually)
+
+# Original README
 <p align="center">
 <img src="https://meteorclient.com/icon.png" alt="meteor-client-logo" width="15%"/>
 </p>

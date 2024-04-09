@@ -1,13 +1,14 @@
 {
   "schemaVersion": 1,
-  "name": "Meteor Client",
+  "name": "femboy sex client",
   "id": "meteor-client",
   "version": "${version}",
-  "description": "Based utility mod.",
+  "description": "stupid fucking edit of meteor client (based utility client, now 20% more based!!!)",
   "authors": [
     "MineGame159",
     "squidoodly",
-    "seasnail"
+    "seasnail",
+    "Strixial"
   ],
   "contact": {
     "homepage": "https://meteorclient.com",
@@ -35,7 +36,7 @@
   "accessWidener": "meteor-client.accesswidener",
   "custom": {
     "meteor-client:devbuild": "${devbuild}",
-    "meteor-client:color": "145,61,226",
+    "meteor-client:color": "218,148,190",
     "meteor-client:commit": "${commit}",
     "modmenu": {
       "links": {
