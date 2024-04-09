@@ -80,7 +80,7 @@ public class MeteorClient implements ClientModInitializer {
             return;
         }
 
-        LOG.info("loading {} (stupid gay sex client)", NAME);
+        LOG.info("loading {} (uuuohhhhhh im gonna cum fuck)", NAME);
 
         // Global minecraft client accessor
         mc = MinecraftClient.getInstance();

@@ -151,7 +151,7 @@ public class DiscordPresence extends Module {
 
         String largeText = "%s %s".formatted(MeteorClient.NAME, MeteorClient.VERSION);
         if (!MeteorClient.DEV_BUILD.isEmpty()) largeText += " Dev Build: " + MeteorClient.DEV_BUILD;
-        rpc.setLargeImage("meteor_client", largeText);
+        rpc.setLargeImage("kissing", largeText);
 
         currentSmallImage = SmallImage.Snail;
 

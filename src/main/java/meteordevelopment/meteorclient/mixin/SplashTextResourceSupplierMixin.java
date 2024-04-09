@@ -34,13 +34,17 @@ public class SplashTextResourceSupplierMixin {
 
     private static List<String> getMeteorSplashes() {
         return Arrays.asList(
-                "Meteor on Crack!",
-                "Star Meteor Client on GitHub!",
-                "Based utility mod.",
-                "§6MineGame159 §fbased god",
-                "§4meteorclient.com",
-                "§4Meteor on Crack!",
-                "§6Meteor on Crack!"
+                "#1 mod for porn addicts",
+                "more normal than hyperdimension episode 8",
+                "less (?) normal than evangelion",
+                "based utility mod (now 20% more!!!)",
+                "friendly sliding session (no switches)",
+                "100% filled with cum uuuooohhhhh",
+                ":3",
+                "goooood morning catboys!!! :3",
+                "0% naked 14 year olds (no kaworu, sorry fellas)",
+                "imagine an apple",
+                ">w<"
         );
     }
 
