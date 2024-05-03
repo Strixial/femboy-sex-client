@@ -44,7 +44,8 @@ public class SplashTextResourceSupplierMixin {
                 "goooood morning catboys!!! :3",
                 "0% naked 14 year olds (no kaworu, sorry fellas)",
                 "imagine an apple",
-                ">w<"
+                ">w<",
+                "just use the resource pack splashes"
         );
     }
 
