@@ -76,9 +76,6 @@ public class ServerSpoof extends Module {
         if (!isActive() || !(event.packet instanceof CustomPayloadC2SPacket)) return;
         Identifier id = ((CustomPayloadC2SPacket) event.packet).payload().getId().id();
 
-        if (spoofBrand.get() && id.equals(BrandCustomPayload.ID.id()))
-            event.packet = new CustomPayloadC2SPacket(new BrandCustomPayload(brand.get()));
-
         if (blockChannels.get()) {
             for (String channel : channels.get()) {
                 if (StringUtils.containsIgnoreCase(id.toString(), channel)) {
@@ -86,6 +83,14 @@ public class ServerSpoof extends Module {
                     return;
                 }
             }
+        }
+
+        if (spoofBrand.get() && id.equals(BrandCustomPayload.ID.id())) {
+            CustomPayloadC2SPacket spoofedPacket = new CustomPayloadC2SPacket(new BrandCustomPayload(brand.get()));
+
+            // PacketEvent.Send doesn't trigger if we send the packet like this
+            event.connection.send(spoofedPacket, null, true);
+            event.cancel();
         }
     }
 
@@ -109,7 +114,7 @@ public class ServerSpoof extends Module {
             );
 
             MutableText acceptance = Text.literal("[Spoof Acceptance]");
-            link.setStyle(link.getStyle()
+            acceptance.setStyle(acceptance.getStyle()
                 .withColor(Formatting.DARK_GREEN)
                 .withUnderline(true)
                 .withClickEvent(new RunnableClickEvent(() -> {
